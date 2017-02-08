@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Probnoe", "Probnoe\Probnoe.csproj", "{E768EFCC-130F-4FE7-9FEE-57C6AC35348F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E768EFCC-130F-4FE7-9FEE-57C6AC35348F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E768EFCC-130F-4FE7-9FEE-57C6AC35348F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E768EFCC-130F-4FE7-9FEE-57C6AC35348F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E768EFCC-130F-4FE7-9FEE-57C6AC35348F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

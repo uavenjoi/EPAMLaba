@@ -90,8 +90,10 @@ class Translation
         }
         return res;
     }
+    //Методы лучше называть более говорящими именами
     public char Cha(char vhodCh)
     {
+        //проверка на null не будет лишней
         return vhodCh.ToString().ToLower()[0];
     }
 }

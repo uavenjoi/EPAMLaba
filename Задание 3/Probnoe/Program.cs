@@ -9,6 +9,7 @@ namespace Dictionary1._0
 {
     class Program
     {
+        //Все вычисления нужно помещать в отдельные методы. 
         static void Main(string[] args)
         {
             string str = Console.ReadLine();//входные данные
@@ -90,13 +91,14 @@ class Vychislenie
         {'/',Do.Subtr}
     };
 
-
+    //List<object> - если известно что на выходе будут строки то object писать не стоит
+    //Такие методы нужно разделять на несколько отдельных. Всякие отдельные проверки можно было вынести в методы
     public List<object> Processing(string text)//массив уже определенных значений
     {
         Cursor cursor = new Cursor(text);
         Boolean b = true;
         string wer = string.Empty;
-        double dou;
+        double dou;//не самое удачное название. Лучше что нибудь вроде number  итд
         int e;
         while(!cursor.IsEnd())
         {
@@ -168,7 +170,8 @@ class Vychislenie
         return ob;
     }
 
-    double dou1;
+    double dou1;//переменную лучше спрятать в методе
+    //если нет особой неоходимости, лучше делать метод приватным
     public double PrivedenieDou(object obj)//преобразование object в double
     {
         if (e == 1)

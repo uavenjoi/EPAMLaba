@@ -47,6 +47,7 @@ namespace WinFormPravopisanie
 
         private void Button_Check_Click(object sender, EventArgs e)
         {
+          //Cursor - это лишний класс, написано в стиле 80-х как на паскале. Можно обойтись обычным foreach, String.Split()
             Cursor cursor = new Cursor(rtb_Text.Text);
             Boolean b = true;
             string sravn;
@@ -65,6 +66,7 @@ namespace WinFormPravopisanie
                     sravn = sravn.ToLower();
                     if (hs.Contains(sravn) != b)
                     {
+                        //слишком большой уровень вложенности. Лучше выносить в отдельные методы 
                         for (int i = 0; i < sravn.Length; i++)
                         {
                             int index = cursor.SavePosInt();
